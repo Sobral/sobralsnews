@@ -1,28 +1,43 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-areas: 
+    "hd hd main main main main main sd sd"
+    "hd hd main main main main main sd sd"
+    "hd hd main main main main main sd sd";
+}
+
+header {
+  background-color: #B3AE8D;
+
+  grid-area: hd;
+  
+  position: fixed;
+  
+  width: 22.2%;
+  height: 100vh;
+}
+
+aside {
+  background:#C9F9FF;
+
+  grid-area: sd;
+
+  position: fixed;
+  right: 0;
+
+  width: 22.1%;
+  height: 100vh;
+}
+
 main {
-  width: 1000px;
-  height: 900px;
-}
+  background: #FFFCE3;
+  grid-area: main;
 
-h1 {
-  color:blue;
-}
-
-div.news div.pictures{
-  display: flex;
-  justify-content: space-between;
-}
-
-
-div.news div.pictures picture {
-  display: flex;
-  margin-bottom: 20px;
-}
-
-div.news div.pictures picture img {
-  width: 190px;
-  height: 190px;
-}
-
-div.news div.pictures picture figcaption {
-  margin-left: 5px;
 }
