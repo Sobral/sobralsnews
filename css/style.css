@@ -15,7 +15,8 @@ html, body, #root {
 }
 
 header {
-  background-color: #B3AE8D;
+  background-color:#0f0f19 ;
+  color: #FFFCE3;
 
   grid-area: hd;
   
@@ -26,7 +27,7 @@ header {
 }
 
 aside {
-  background:#C9F9FF;
+  background:#474766;
 
   grid-area: sd;
 
